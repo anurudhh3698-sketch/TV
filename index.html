@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurudh TV World | Smart TVs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">ANURUDH<span> TV WORLD</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">TVs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart" onclick="showCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="tag">THE FUTURE OF ENTERTAINMENT</p>
+            <h1>Experience<br>Every <span>Pixel.</span></h1>
+            <p>Discover stunning 4K, OLED and Smart TVs
+               for your perfect home entertainment.</p>
+            <a href="#products" class="btn">SHOP TVs ↗</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=85"
+                alt="Modern television in a living room">
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <p class="tag">OUR COLLECTION</p>
+        <h2>Find Your Perfect <span>TV</span></h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search TVs..."
+            aria-label="Search televisions">
+
+        <div class="product-grid" id="product-grid">
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=80"
+                     alt="4K Smart TV">
+                <div class="product-info">
+                    <span class="category">4K ULTRA HD</span>
+                    <h3>Vision 55-inch Smart TV</h3>
+                    <p>4K UHD · Smart Apps · HDR</p>
+                    <div class="price">₹39,999</div>
+                    <button class="buy-btn"
+                        onclick="addToCart('Vision 55-inch Smart TV', 39999)">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=700&q=80"
+                     alt="Premium television display">
+                <div class="product-info">
+                    <span class="category">OLED DISPLAY</span>
+                    <h3>Ultra OLED 65-inch TV</h3>
+                    <p>OLED · 4K · Cinema Experience</p>
+                    <div class="price">₹79,999</div>
+                    <button class="buy-btn"
+                        onclick="addToCart('Ultra OLED 65-inch TV', 79999)">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=700&q=80"
+                     alt="Television screen">
+                <div class="product-info">
+                    <span class="category">SMART TV</span>
+                    <h3>Smart Vision 43-inch TV</h3>
+                    <p>Full HD · Wi-Fi · Streaming</p>
+                    <div class="price">₹24,999</div>
+                    <button class="buy-btn"
+                        onclick="addToCart('Smart Vision 43-inch TV', 24999)">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+        </div>
+        <p id="no-results" hidden>No TVs found. Try another search.</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Entertainment, <span>Reimagined.</span></h2>
+        <p>
+            Welcome to Anurudh TV World — your demo destination
+            for exploring TVs, comparing prices and discovering
+            your next home entertainment experience.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Need Help Choosing?</h2>
+        <p>Contact us to learn more about our TV collection.</p>
+        <a href="mailto:your-email@example.com" class="btn">
+            CONTACT US ↗
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Anurudh TV World. All rights reserved.</p>
+        <p>Student demo project. Product names and prices are illustrative.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
